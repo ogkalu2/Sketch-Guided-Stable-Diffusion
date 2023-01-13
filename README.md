@@ -1,6 +1,10 @@
 # Sketch-Guided-Text-To-Image-Diffusion
 Unofficial Implementation of the Google Paper - https://sketch-guided-diffusion.github.io/
 
+**Pretrained LGP**
+
+I have Uploaded a pretrained LGP on Stable Diffusion v1.5 here - https://huggingface.co/ogkalu/Stable-Diffusion-Latent-Guidance-Predictor. Trained on 4995 Imagenet Images for 16 epochs.
+
 **Training the Latent Guidance Predictor**
 
 First, you will need a dataset of a few thousamd images and their corresponding edge maps. You can download only as many Imagenet Images as needed here - https://github.com/mf1024/ImageNet-Datasets-Downloader (Note: Set Multi-Processing Workers to 1 to avoid downloading more Images than specified). Next, use pidinet to generate the edge maps. I suggest using my fork to easily generate the edge maps for a large corpus of images. https://github.com/ogkalu2/pidinet-for-imagenet
@@ -40,6 +44,3 @@ I have Uploaded a pretrained LGP on Stable Diffusion v1.5 here - https://hugging
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
-
-
-
